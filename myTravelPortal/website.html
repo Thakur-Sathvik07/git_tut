@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel Portal</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f7fb;
+      color:#333;
+    }
+
+    /* Navbar */
+    nav{
+      background:#0b5ed7;
+      color:white;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:15px 40px;
+    }
+
+    nav h1{
+      font-size:28px;
+    }
+
+    nav ul{
+      list-style:none;
+      display:flex;
+      gap:25px;
+    }
+
+    nav ul li a{
+      text-decoration:none;
+      color:white;
+      font-size:16px;
+      transition:0.3s;
+    }
+
+    nav ul li a:hover{
+      color:yellow;
+    }
+
+    /* Hero Section */
+    .hero{
+      height:90vh;
+      background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e')
+      no-repeat center center/cover;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+    }
+
+    .hero-content{
+      background:rgba(0,0,0,0.5);
+      padding:40px;
+      border-radius:10px;
+    }
+
+    .hero-content h2{
+      font-size:50px;
+      margin-bottom:15px;
+    }
+
+    .hero-content p{
+      font-size:20px;
+      margin-bottom:20px;
+    }
+
+    .btn{
+      background:#ff9800;
+      color:white;
+      padding:12px 25px;
+      text-decoration:none;
+      border-radius:5px;
+      font-size:18px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#e68900;
+    }
+
+    /* Services Section */
+    .services{
+      padding:60px 40px;
+      text-align:center;
+    }
+
+    .services h2{
+      margin-bottom:40px;
+      font-size:36px;
+      color:#0b5ed7;
+    }
+
+    .service-box{
+      display:flex;
+      justify-content:center;
+      gap:25px;
+      flex-wrap:wrap;
+    }
+
+    .card{
+      background:white;
+      width:300px;
+      padding:25px;
+      border-radius:10px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card img{
+      width:100%;
+      border-radius:10px;
+      height:180px;
+      object-fit:cover;
+    }
+
+    .card h3{
+      margin:15px 0;
+      color:#0b5ed7;
+    }
+
+    /* Footer */
+    footer{
+      background:#0b5ed7;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    /* Responsive */
+    @media(max-width:768px){
+      nav{
+        flex-direction:column;
+        gap:10px;
+      }
+
+      .hero-content h2{
+        font-size:35px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>Travel Portal</h1>
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Flights</a></li>
+      <li><a href="#">Hotels</a></li>
+      <li><a href="#">Cabs</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+
+    <div class="hero-content">
+      <h2>Explore The World</h2>
+
+      <p>
+        Book Flights, Hotels and Cabs at the Best Price
+      </p>
+
+      <a href="#" class="btn">Book Now</a>
+    </div>
+
+  </section>
+
+  <!-- Services -->
+  <section class="services">
+
+    <h2>Our Services</h2>
+
+    <div class="service-box">
+
+      <!-- Flight Card -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05" alt="Flight">
+
+        <h3>Flight Booking</h3>
+
+        <p>
+          Search and book domestic and international flights easily.
+        </p>
+      </div>
+
+      <!-- Hotel Card -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945" alt="Hotel">
+
+        <h3>Hotel Booking</h3>
+
+        <p>
+          Find luxury and budget hotels with best offers.
+        </p>
+      </div>
+
+      <!-- Cab Card -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="Cab">
+
+        <h3>Cab Services</h3>
+
+        <p>
+          Book cabs for airport pickup and city travel.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Travel Portal | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
